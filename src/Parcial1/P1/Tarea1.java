@@ -1,39 +1,25 @@
+package Parcial1.P1;
 
-        package Parcial1.P1;
+import java.util.Scanner;
 
-        import java.io.BufferedReader;
-        import java.io.InputStreamReader;
-        import java.util.Scanner;
+public class Tarea1 {
 
-
-        public class Tarea1 {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-
-        private int tamaño;
-
-
-        public  Tarea1(){
+        int tamaño;
         System.out.println("       -Piramide de asteriscos-");
 
-        }
-        public  void Piramide(){
+        System.out.print("¿Cuantas filas va a tener la piramide? R= ");
+        tamaño = sc.nextInt();
 
-            System.out.print("¿Cuantas filas va a tener la piramide? ");
-            tamaño=sc.nextInt();
-            for(int i=0; i<=tamaño; i++ ){
-
-                 for(int j=1; j<=tamaño-i; j++ ){
-                     System.out.print("");
-                }
-                 for(int aster=1;aster<=(i+1); aster++){
-                          System.out.print("*");
-                     }
-                 System.out.println();
+        for (int i = 0; i < tamaño; i++) {
+            for (int l = 0; l < i + 1; l++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
-        }
-        }
-
+    }
+}
     
    
