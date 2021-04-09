@@ -14,7 +14,6 @@ public class MainP {
         Proyecto[] proyecto;
         int tamaño;
 
-        String respuesta;
         System.out.println("OoOoOoOo" + "____" + "TIENDAS LOXXO" + "____" + "oOoOoOoOoO");
         System.out.println("                            ");
         System.out.print("¿Cual es el tamaño de la cartera? R= ");
@@ -46,7 +45,7 @@ public class MainP {
                     System.out.println("----Puede registrar hasta " + tamaño + " clientes----");
                     int w = 0;
                     try {
-                        if (w < proyecto.length) {
+                        do {
                             System.out.println("----------------------------------------");
                             System.out.println("Cliente " + (w + 1));
                             System.out.println("----------------------------------------");
@@ -66,7 +65,8 @@ public class MainP {
                             proyecto[w].setEdad(sc.nextInt());
 
                             w++;
-                        }
+                        } while (w > proyecto.length);
+                        System.out.println("Ya solo puede registrar " + (tamaño - 1) + " clientes");
 
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
