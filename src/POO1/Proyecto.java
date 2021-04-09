@@ -2,6 +2,7 @@
 package POO1;
 
 public class Proyecto {
+
     private int codigoCliente;
     private String nombre;
     private String apellidoPaterno;
@@ -9,6 +10,10 @@ public class Proyecto {
     private String telefono;
     private String direccion;
     private int edad;
+
+    Proyecto() {
+
+    }
 
     public Proyecto(int codigoCliente, String nombre, String apellidoPaterno, String apellidoMaterno, String telefono, String direccion, int edad) {
         this.codigoCliente = codigoCliente;
@@ -19,11 +24,6 @@ public class Proyecto {
         this.direccion = direccion;
         this.edad = edad;
     }
-
-    Proyecto() {
-        
-    }
-
 
     public int getCodigoCliente() {
         return codigoCliente;
@@ -74,16 +74,15 @@ public class Proyecto {
     }
 
     public int getEdad() {
-          
+
         return edad;
     }
 
     public void setEdad(int edad) {
 
         this.edad = edad;
-}
-   
-    
+    }
+
 }
 
   

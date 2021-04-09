@@ -150,7 +150,7 @@ public class MainP {
                     }
                     break;
                 case 4:
-                    System.out.println("-----SISTEMA CERRADO-----");
+                    System.out.println("----------SISTEMA CERRADO------------");
                     break;
             }
         }
