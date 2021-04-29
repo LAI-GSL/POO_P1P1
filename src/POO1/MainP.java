@@ -45,7 +45,7 @@ public class MainP {
                     System.out.println("----Puede registrar hasta " + tamaño + " clientes----");
                     int w = 0;
                     try {
-                        do {
+                        if(w < proyecto.length) {
                             System.out.println("----------------------------------------");
                             System.out.println("Cliente " + (w + 1));
                             System.out.println("----------------------------------------");
@@ -63,11 +63,10 @@ public class MainP {
                             proyecto[w].setDireccion(bf.readLine());
                             System.out.print("La edad es: ");
                             proyecto[w].setEdad(sc.nextInt());
-
                             w++;
-                        } while (w > proyecto.length);
+                        } else{ 
                         System.out.println("Ya solo puede registrar " + (tamaño - 1) + " clientes");
-
+}
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
                     }
