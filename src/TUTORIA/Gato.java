@@ -32,5 +32,10 @@ public class Gato extends MASCOTAS {
     public void setRaza(String raza) {
         this.raza = raza;
     }
+
+    @Override
+    public void Corre() {
+        System.out.println("Corre a una gran velocidad con sus 4 patas");
+    }
     
 }

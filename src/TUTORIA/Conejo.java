@@ -24,6 +24,11 @@ public class Conejo extends MASCOTAS{
     public void setBrinca(String Brinca) {
         this.Brinca = Brinca;
     }
+
+    @Override
+    public void Corre() {
+        System.out.println("Corre en dos patas ");
+    }
     
     
 }

@@ -38,5 +38,5 @@ public abstract class MASCOTAS {
         this.Años = Años;
     }
     
-    
+    public abstract void Corre();
 }
